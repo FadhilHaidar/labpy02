@@ -11,7 +11,7 @@ member dari user, lalu menghitung total harga yang harus dibayar.
    
 ![Flowchart (7)](https://github.com/user-attachments/assets/db353fb8-5e6e-475c-895c-7dc3ad1c7529)
 
-3. Program Python:
+2. Program Python:
 
    Menggunakan If Else:
    
@@ -22,7 +22,7 @@ member dari user, lalu menghitung total harga yang harus dibayar.
    ![image](https://github.com/user-attachments/assets/f980e1e0-cec4-4f12-bb46-b8d3e9480d11)
 
 
-4. Algoritma:
+3. Algoritma:
 
     - Tampilkan pilihan kepada pengguna untuk menentukan tipe tiket (Reguler atau VIP).
    
@@ -42,7 +42,7 @@ member dari user, lalu menghitung total harga yang harus dibayar.
    
     - Tampilkan total harga yang harus dibayar.
   
-5. output:
+4. output:
 
    - Harga tiket Reguler dengan member
      
@@ -70,12 +70,12 @@ menghitung hasil sesuai dengan operator yang dipilih.
 
 ![Flowchart (6)](https://github.com/user-attachments/assets/e559b6e9-6646-4c0f-ad78-d591b071a8fd)
 
-3. Program Python:
+2. Program Python:
 
 ![image](https://github.com/user-attachments/assets/86b0115d-2def-49ee-b5b7-87636b6f5b84)
 
 
-4. Algoritma:
+3. Algoritma:
 
     - Pengguna memasukkan dua angka.
 
@@ -94,7 +94,7 @@ menghitung hasil sesuai dengan operator yang dipilih.
     - Tampilkan hasil perhitungan (Jika operator tidak valid, tampilkan pesan kesalahan)
    
 
-5. output:
+4. output:
 
    Penjumlahan:
    
