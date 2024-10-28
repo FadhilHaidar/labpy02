@@ -1,86 +1,117 @@
 # Latihan 3: Buat program python untuk kasus berikut:
 
-3 Kasus 1: Program Pemesanan Tiket Bioskop
+## Kasus 1: Program Pemesanan Tiket Bioskop
 
 Buat program yang menghitung harga tiket bioskop. Tiket reguler berharga Rp50.000,
 sedangkan tiket VIP berharga Rp100.000. Jika user memiliki kartu member, mereka
 mendapatkan diskon 20% dari harga tiket. Program ini harus meminta tipe tiket dan status
 member dari user, lalu menghitung total harga yang harus dibayar.
 
-1. Algoritma:
-Tampilkan pilihan kepada pengguna untuk menentukan tipe tiket (Reguler atau VIP).
-Minta pengguna memasukkan status keanggotaan (member atau bukan member).
-Tetapkan harga tiket dasar:
-Jika tipe tiket adalah Reguler, harganya adalah Rp50.000.
-Jika tipe tiket adalah VIP, harganya adalah Rp100.000.
-Cek status keanggotaan pengguna:
-Jika pengguna adalah member, berikan diskon 20%.
-Jika tidak, harga tetap tanpa diskon.
-Tampilkan total harga yang harus dibayar.
+1. Flowchart:
+   
+![Flowchart (7)](https://github.com/user-attachments/assets/db353fb8-5e6e-475c-895c-7dc3ad1c7529)
 
 3. Program Python:
-python
-Salin kode
-# Harga tiket dasar
-harga_reguler = 50000
-harga_vip = 100000
 
-# Input dari user
-tipe_tiket = input("Masukkan tipe tiket (Reguler/VIP): ").strip().lower()
-is_member = input("Apakah Anda memiliki kartu member? (ya/tidak): ").strip().lower()
+   Menggunakan If Else:
+   
+   ![image](https://github.com/user-attachments/assets/53e75f7a-b2d6-4e6b-87b6-49e38ba2b0f8)
 
-# Menentukan harga tiket berdasarkan tipe
-harga_tiket = harga_reguler if tipe_tiket == "reguler" else harga_vip
+   Menggunakan operator ternary:
+   
+   ![image](https://github.com/user-attachments/assets/f980e1e0-cec4-4f12-bb46-b8d3e9480d11)
 
-# Memberikan diskon jika memiliki kartu member
-harga_akhir = harga_tiket * 0.8 if is_member == "ya" else harga_tiket
 
-# Menampilkan hasil
-print(f"Total harga yang harus dibayar: Rp{harga_akhir}")
+4. Algoritma:
 
-3. Flowchart:
-Mulai.
-Minta input tipe_tiket dan is_member.
-Jika tipe_tiket adalah Reguler, tetapkan harga_tiket = 50,000.
-Jika VIP, tetapkan harga_tiket = 100,000.
-Jika is_member = ya, hitung harga_akhir = harga_tiket * 0.8.
-Jika tidak, harga_akhir = harga_tiket.
-Tampilkan harga_akhir.
-Selesai.
-Kasus 2: Program Kalkulator Sederhana
-1. Algoritma:
-Minta pengguna untuk memasukkan dua angka.
-Minta pengguna memilih operator aritmatika (+, -, *, atau /).
-Periksa operator:
-Jika operator adalah +, hitung penjumlahan.
-Jika operator adalah -, hitung pengurangan.
-Jika operator adalah *, hitung perkalian.
-Jika operator adalah /, hitung pembagian (cek juga agar tidak membagi dengan 0).
-Tampilkan hasil perhitungan.
-Jika operator tidak valid, tampilkan pesan kesalahan.
-2. Program Python:
-python
-Salin kode
-# Input dari user
-angka1 = float(input("Masukkan angka pertama: "))
-angka2 = float(input("Masukkan angka kedua: "))
-operator = input("Masukkan operator (+, -, *, /): ")
+    - Tampilkan pilihan kepada pengguna untuk menentukan tipe tiket (Reguler atau VIP).
+   
+    - Minta pengguna memasukkan status keanggotaan (member atau bukan member).
+   
+    - Tetapkan harga tiket dasar:
 
-# Proses kalkulasi
-if operator == '+':
-    hasil = angka1 + angka2
-elif operator == '-':
-    hasil = angka1 - angka2
-elif operator == '*':
-    hasil = angka1 * angka2
-elif operator == '/':
-    # Memastikan tidak ada pembagian dengan 0
-    if angka2 != 0:
-        hasil = angka1 / angka2
-    else:
-        hasil = "Error: Pembagian dengan nol tidak diperbolehkan."
-else:
-    hasil = "Error: Operator tidak valid."
+        Jika tipe tiket adalah Reguler, harganya adalah Rp50.000.
+      
+        Jika tipe tiket adalah VIP, harganya adalah Rp100.000.
+   
+    - Cek status keanggotaan pengguna:
+   
+        Jika pengguna adalah member, berikan diskon 20%.
+       
+        Jika tidak, harga tetap tanpa diskon.
+   
+    - Tampilkan total harga yang harus dibayar.
+  
+5. output:
 
-# Menampilkan hasil
-print("Hasil perhitungan:", hasil)
+   - Harga tiket Reguler dengan member
+     
+     ![image](https://github.com/user-attachments/assets/a458a9c2-6515-4c5b-8327-3fe7751707c0)
+
+   - Harga tiket Reguler tanpa member
+     
+     ![image](https://github.com/user-attachments/assets/ed959933-ea5a-42c4-b485-25e6b1a6362a)
+
+   - Harga tiket VIP dengan member
+     
+     ![image](https://github.com/user-attachments/assets/8932ec22-aee0-4022-a367-a9cb97c16dac)
+
+   - Harga tiket VIP tanpa member
+     
+   - ![image](https://github.com/user-attachments/assets/07d100bc-d89b-498f-b91e-b0e272015d95)
+
+## Kasus 2: Program Kalkulator Sederhana
+
+Buat program kalkulator yang menerima dua angka dan satu operator aritmatika dari
+pengguna (penjumlahan, pengurangan, perkalian, atau pembagian). Program akan
+menghitung hasil sesuai dengan operator yang dipilih.
+
+1. Flowchart:
+
+![Flowchart (6)](https://github.com/user-attachments/assets/e559b6e9-6646-4c0f-ad78-d591b071a8fd)
+
+3. Program Python:
+
+![image](https://github.com/user-attachments/assets/86b0115d-2def-49ee-b5b7-87636b6f5b84)
+
+
+4. Algoritma:
+
+    - Pengguna memasukkan dua angka.
+
+    - pengguna memilih operator aritmatika (+, -, *, atau /).
+
+    - Periksa operator:
+   
+        Jika operator adalah +, hitung penjumlahan.
+    
+        Jika operator adalah -, hitung pengurangan.
+       
+        Jika operator adalah *, hitung perkalian.
+       
+        Jika operator adalah /, hitung pembagian (cek juga agar tidak membagi dengan 0).
+   
+    - Tampilkan hasil perhitungan (Jika operator tidak valid, tampilkan pesan kesalahan)
+   
+
+5. output:
+
+   Penjumlahan:
+   
+   ![image](https://github.com/user-attachments/assets/ed0e1648-6edc-4247-8b53-02d1f404ddec)
+   
+   Pengurangan:
+   
+   ![image](https://github.com/user-attachments/assets/7de86f9c-92aa-4a27-924c-af1f155e4681)
+   
+   Perkalian:
+   
+   ![image](https://github.com/user-attachments/assets/957440d0-1bbc-4283-ba42-7bb73755aff8)
+
+   Pembagian:
+   
+   ![image](https://github.com/user-attachments/assets/506d1823-7004-42d8-85ed-4148d50f5f21)
+
+   Pembagian (Nol):
+   
+   ![image](https://github.com/user-attachments/assets/60d0aaaf-0993-48af-812f-9d603b2e88b1)
